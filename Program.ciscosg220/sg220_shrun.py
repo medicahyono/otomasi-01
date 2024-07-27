@@ -6,6 +6,6 @@ core = {
     "password": "Ciscoweb2019!"
 }
 net_connect = ConnectHandler(**core)
-output= net_connect.send_command("show run")
+output= net_connect.send_command("show vlan")
 print(output)
 net_connect.disconnect()
